@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(90% - 68px);
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Raleway-SemiBold", sans-serif;
+    font-size: 40px;
+    line-height: 145%;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 20px;
+    }
+}
+
+.logo {
+    width: 169.17px;
+    height: 34px;
+}

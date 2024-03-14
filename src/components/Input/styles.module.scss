@@ -1,0 +1,22 @@
+.input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    accent-color: white;
+    color: white;
+    height: 37px;
+    width: 100%;
+    font-size: 20px;
+
+    &::placeholder {
+        font-size: 20px;
+        font-family: Montserrat, sans-serif;
+    }
+}
+
+@media (max-width: 767px) {
+    .input {
+        font-size: 12px;
+    }
+}

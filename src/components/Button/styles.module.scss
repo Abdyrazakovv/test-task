@@ -1,0 +1,110 @@
+@mixin btn() {
+    height: 71px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 122.8%;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 20px 30px;
+}
+
+@mixin vector_con() {
+    width: 70px;
+    padding: 13px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.butter_white {
+    background-color: white;
+    border: 1px solid #0b3461;
+    color: #07305d;
+    @include btn();
+}
+
+.butter_transparent {
+    background-color: transparent;
+    color: white ;
+    border: 1px solid white;
+    @include btn();
+}
+
+.vector_container {
+    background-color: white;
+    border: 1px solid #0B3461;
+    @include vector_con()
+}
+
+.vector_transparent {
+    background-color: transparent;
+    border: 1px solid white;
+    @include vector_con()
+}
+
+.vector {
+    width: 20px;
+    height: 20px;
+}
+@media (max-width: 1023px) {
+    .butter_white {
+        height: 50.28px;
+        font-size: 14px;
+        padding:  10px;
+    }
+
+    .vector {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .butter_transparent {
+        height: 50.28px;
+        font-size: 14px;
+        padding:  10px;
+    }
+
+    .vector_container {
+        padding: 0 10px;
+        width: 40px;
+    }
+
+    .vector_transparent {
+        padding: 0 10px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .butter_white {
+        height: 30.28px;
+        font-size: 10px;
+        padding: 0 10px;
+        width: 126px;
+    }
+
+    .vector {
+        width: 15px;
+        height: 15px;
+        margin-bottom: 5px;
+    }
+
+    .butter_transparent {
+        height: 30.28px;
+        font-size: 10px;
+        padding: 0 5px;
+        width: 250px;
+    }
+
+    .vector_container {
+        padding: 0 10px;
+        width: 30px;
+    }
+
+    .vector_transparent {
+        padding: 0 10px;
+        width: 30px;
+    }
+}
+
